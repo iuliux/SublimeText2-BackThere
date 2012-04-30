@@ -11,6 +11,6 @@ It is composed of two commands:
 
 ## Default keybingings
 
-1. Save command: `alt` + `shift` + `\``
-2. Go command: `alt` + `\``
+1. Save command: `alt` + `shift` + ```
+2. Go command: `alt` + ```
 For OSX, replace `alt` with `super`
