@@ -1,0 +1,26 @@
+[
+    {
+        "caption": "Goto",
+        "mnemonic": "g",
+        "id": "goto",
+        "children":
+        [
+            {
+                "caption": "Back There",
+                "mnemonic": "b",
+                "id": "gobackthere",
+                "children":
+                [
+                    {
+                        "command": "save_back_there",
+                        "caption": "Save current cursor location"
+                    },
+                    {
+                        "command": "go_back_there",
+                        "caption": "Go back to cursor saved location"
+                    }
+                ]
+            }
+        ]
+    }
+]
