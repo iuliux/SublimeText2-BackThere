@@ -22,3 +22,7 @@ It is composed of two commands:
     alt + `
 
 For OSX, replace `alt` with `super`
+
+
+### License
+MIT License, see http://opensource.org/licenses/MIT
