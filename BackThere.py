@@ -33,9 +33,14 @@ class SaveBackThereCommand(sublime_plugin.TextCommand):
 
 
 class GoBackThereCommand(sublime_plugin.TextCommand):
-    """ Replaces the cursor to the position in memory """
+    """ Moves the cursor to the position in memory """
     def run(self, edit):
         if bt_memory.isValid():
+            saved_region = sublime.Region(bt_memory.get())
+
+            # Move the cursor _back there_
             self.view.sel().clear()
-            self.view.sel().add( \
-                    sublime.Region(bt_memory.get()))
+            self.view.sel().add(saved_region)
+            
+            # Center the new cursor position in the viewport
+            self.view.show_at_center(saved_region)
