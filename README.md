@@ -24,5 +24,28 @@ It is composed of two commands:
 For OSX, replace `alt` with `super`
 
 
-### License
+## Installing
+
+If you don't have `git` installed, you can just download as Zip, and unpack it.
+
+### OSX
+
+    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+    $ git clone git@github.com:iuliux/SublimeText2-BackThere.git BackThere
+
+### Linux (Ubuntu like distros)
+
+    $ cd ~/.config/sublime-text-2/Packages/
+    $ git clone git@github.com:iuliux/SublimeText2-BackThere.git BackThere
+
+### Windows 7:
+
+    Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"
+
+### Windows XP:
+
+    Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"
+
+
+## License
 MIT License, see http://opensource.org/licenses/MIT
