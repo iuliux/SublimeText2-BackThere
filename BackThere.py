@@ -43,4 +43,5 @@ class GoBackThereCommand(sublime_plugin.TextCommand):
             self.view.sel().add(saved_region)
             
             # Center the new cursor position in the viewport
-            self.view.show_at_center(saved_region)
+            # (only if cursor is out of viewport)
+            self.view.show(saved_region)
