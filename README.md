@@ -4,6 +4,8 @@ BackThere (Sublime Text 2 plugin)
 
 ## It does...
 
+Saves one position for you to return to it as many times you need.
+
 It is composed of two commands:
 
 1.  `save_back_there` - Saves the current position of the text cursor in the current window
@@ -15,11 +17,11 @@ It is composed of two commands:
 
 1.  Save command: 
 
-    alt + shift + `
+    `Ctrl` + `Shift` + `q`
 
 2.  Go command:
 
-    alt + `
+    `Ctrl` + `q`
 
 For OSX, replace `alt` with `super`
 
