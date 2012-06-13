@@ -1,4 +1,4 @@
 [
-	{ "keys": ["shift+super+`"], "command": "save_back_there" },
-	{ "keys": ["super+`"], "command": "go_back_there" }
+	{ "keys": ["shift+ctrl+q"], "command": "save_back_there" },
+	{ "keys": ["ctrl+q"], "command": "go_back_there" }
 ]
