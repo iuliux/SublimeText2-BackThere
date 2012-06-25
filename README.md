@@ -23,7 +23,7 @@ It is composed of two commands:
 
     `Ctrl` + `q`
 
-For OSX, replace `alt` with `super`
+For OSX, replace `Ctrl` with `Command`
 
 
 ## Installing
