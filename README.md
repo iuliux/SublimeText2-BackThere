@@ -13,7 +13,7 @@ It is composed of two commands:
 2.  `go_back_there` - Places the cursor _back_ _there_, where it was last saved
 
 
-## Default keybingings
+## Default key bingings
 
 1.  Save command: 
 
@@ -24,6 +24,11 @@ It is composed of two commands:
     `Ctrl` + `q`
 
 For OSX, replace `Ctrl` with `Command`
+
+To use your custom (and probably better) key bindings, you should either add them in `Preferences -> Key bindings - User` like in the example below, either edit the `Default (<operating-system>).sublime-keymap` file in the plugin's folder.
+
+    { "keys": ["shift+ctrl+q"], "command": "save_back_there" },
+    { "keys": ["ctrl+q"], "command": "go_back_there" }
 
 
 ## Installing
