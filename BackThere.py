@@ -25,25 +25,34 @@ class BackThereMemory:
     def isValid(self):
         return self.valid
 
-bt_memory = BackThereMemory()
+
+# One memory bank for each buffer
+bt_memory = {}
+
 
 class SaveBackThereCommand(sublime_plugin.TextCommand):
     """ Puts the current location of the cursor in memory """
     def run(self, edit):
+        buff_id = self.view.buffer_id()
         sels = self.view.sel()
-        bt_memory.put(sels[0].begin())
+
+        if not buff_id in bt_memory:
+            # First time in current buffer
+            bt_memory[buff_id] = BackThereMemory()
+        bt_memory[buff_id].put(sels[0].begin())
 
 
 class GoBackThereCommand(sublime_plugin.TextCommand):
     """ Moves the cursor to the position in memory """
     def run(self, edit):
-        if bt_memory.isValid():
-            saved_region = sublime.Region(bt_memory.get())
+        buff_id = self.view.buffer_id()
+        if buff_id in bt_memory and bt_memory[buff_id].isValid():
+            saved_region = sublime.Region(bt_memory[buff_id].get())
 
             # Move the cursor _back there_
             self.view.sel().clear()
             self.view.sel().add(saved_region)
-            
+
             # Center the new cursor position in the viewport
             # (only if cursor is out of viewport)
             self.view.show(saved_region)
