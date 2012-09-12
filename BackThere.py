@@ -2,9 +2,11 @@ import sublime, sublime_plugin
 
 # Author: Iulius Curt, April 2012
 
-# available commands
-#   save_back_there
-#   go_back_there
+# Available commands
+#   * save_back_there
+#       Saves current position, overwriting eventual previously saved one
+#   * go_back_there
+#       Jumps to the latest saved position
 
 
 class BackThereMemory:
