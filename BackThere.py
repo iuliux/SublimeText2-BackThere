@@ -49,6 +49,11 @@ class GoBackThereCommand(sublime_plugin.TextCommand):
         if buff_id in bt_memory and bt_memory[buff_id].isValid():
             saved_region = sublime.Region(bt_memory[buff_id].get())
 
+            # Check if the saved position is still inside the buffer limits
+            buff_end = self.view.size()
+            if saved_region.begin() > buff_end:
+                saved_region = sublime.Region(buff_end, buff_end)
+
             # Move the cursor _back there_
             self.view.sel().clear()
             self.view.sel().add(saved_region)
