@@ -30,8 +30,10 @@ To use your custom (and probably better) key bindings, you should either add the
     { "keys": ["shift+ctrl+q"], "command": "save_back_there" },
     { "keys": ["ctrl+q"], "command": "go_back_there" }
 
+## Installing (with PackageControl)
+TODO
 
-## Installing
+## Installing (without PackageControl)
 
 If you don't have `git` installed, you can just download as Zip, and unpack it.
 
