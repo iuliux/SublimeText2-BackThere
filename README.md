@@ -31,7 +31,10 @@ To use your custom (and probably better) key bindings, you should either add the
     { "keys": ["ctrl+q"], "command": "go_back_there" }
 
 ## Installing (with PackageControl)
-TODO
+
+(Install [Package Control](http://wbond.net/sublime_packages/package_control/installation) plugin)
+
+Invoke Package Control (`Ctrl`+`Shift`+`P`), enter Install command and pick `Back There`
 
 ## Installing (without PackageControl)
 
