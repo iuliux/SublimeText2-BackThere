@@ -12,6 +12,9 @@ It is composed of two commands:
 
 2.  `go_back_there` - Places the cursor _back_ _there_, where it was last saved
 
+__New:__ commit [43825a1f9b](https://github.com/iuliux/SublimeText2-BackThere/commit/43825a1f9b79d5e88ca00541995b5fa388177fbc) introduces:  
+When no position is saved in the current file, a jump to the latest globally saved position will be performed (this involving a switch to that other file's view) if at least one saved position exists in the current session (since the editor was started).
+
 
 ## Default key bingings
 
