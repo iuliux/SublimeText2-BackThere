@@ -12,18 +12,15 @@ import sublime, sublime_plugin
 class BackThereMemory:
     """ Utility class to remember position """
     def __init__(self):
-        self.location = 0
+        self._location_ = 0
         self.valid = False
 
     def put(self, location):
-        self.location = location
+        self._location_ = location
         self.valid = True
 
     def get(self):
-        return self.location
-
-    def isValid(self):
-        return self.valid
+        return self._location_
 
 
 # One memory bank for each buffer
@@ -46,7 +43,7 @@ class GoBackThereCommand(sublime_plugin.TextCommand):
     """ Moves the cursor to the position in memory """
     def run(self, edit):
         buff_id = self.view.buffer_id()
-        if buff_id in bt_memory and bt_memory[buff_id].isValid():
+        if buff_id in bt_memory and bt_memory[buff_id].valid:
             saved_region = sublime.Region(bt_memory[buff_id].get())
 
             # Check if the saved position is still inside the buffer limits
