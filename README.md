@@ -1,4 +1,4 @@
-BackThere (Sublime Text 2 plugin)
+BackThere (Sublime Text 2/3 plugin)
 ======
 
 
