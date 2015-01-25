@@ -1,6 +1,8 @@
 BackThere (Sublime Text 2/3 plugin)
 ======
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iuliux/SublimeText2-BackThere?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 ## It does...
 
