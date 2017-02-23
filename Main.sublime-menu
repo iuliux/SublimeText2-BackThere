@@ -7,7 +7,7 @@
         [
             {
                 "caption": "Back There",
-                "mnemonic": "b",
+                "mnemonic": "B",
                 "id": "gobackthere",
                 "children":
                 [
