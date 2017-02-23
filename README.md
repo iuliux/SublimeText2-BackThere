@@ -28,7 +28,7 @@ When no position is saved in the current file, a jump to the latest globally sav
 
     `Ctrl` + `q`
 
-For OSX, replace `Ctrl` with `Command`
+For OSX, replace `Ctrl` with `Control` (not `Command`)
 
 To use your custom (and probably better) key bindings, you should either add them in `Preferences -> Key bindings - User` like in the example below, either edit the `Default (<operating-system>).sublime-keymap` file in the plugin's folder.
 
